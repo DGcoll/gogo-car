@@ -40,36 +40,93 @@
 <!--page start-->
 <div data-role="page" id="start">
     <div  class="page_background" align="center" id="content-start">
-        <div class="start-page-1 col-xs-12 cn-dg-0">
-            <div class="img-log">
-                <img src="img/logo.png"/>
+<div class="start-page-1 col-xs-12 cn-dg-0">
+    <div class="img-log">
+        <img src="img/logo.png"/>
+    </div>
+                
+    <div class="col-xs-12 cn-dg-10" style="margin-top:40px;">
+        <div class="col-xs-4 cn-dg-5 mg-t-20">
+            <div class="lang-dv lang-dv-1 act-lang dem-1" onclick="rem_d2('dem-1')">
+                العربية
             </div>
-            
-            <div class="foot-all col-xs-12" style="margin-bottom: 100px">
-                <div class="col-xs-12 mg-t-15 cn-dg-0">
-                    <button data-role="none" class="btn all-button th-bt-1" onclick="op_new('login')">
-                        تسجيل الدخول
-                    </button>
-                </div>
-            
-                <div class="col-xs-12 mg-t-15 cn-dg-0">
-                    <button data-role="none" class="btn all-button th-bt-1" onclick="op_new('signup')">
-                        أننشاء حساب
-                    </button>
-                </div>
-
-                <div class="col-xs-12 mg-t-15 cn-dg-0">
-                    <button data-role="none" class="btn all-button th-bt-1" onclick="op_new('home')">
-                        استمرار
-                        <span class="ico-log">
-                            <img src="img/next-page.png"/>
-                        </span>
-                    </button>
-                </div>         
-            </div> 
-            
         </div>
-	</div>
+        
+        <div class="col-xs-4 cn-dg-5 mg-t-20">
+            <div class="lang-dv lang-dv-2 dem-2" onclick="rem_d2('dem-2')">
+                English
+            </div>
+        </div>
+        
+        <div class="col-xs-4 cn-dg-5 mg-t-20">
+            <div class="lang-dv lang-dv-3 dem-3" onclick="rem_d2('dem-3')">
+                Français
+            </div>
+        </div>
+        
+        <div class="col-xs-4 cn-dg-5 mg-t-20">
+            <div class="lang-dv lang-dv-3 dem-4" onclick="rem_d2('dem-4')">
+                中文
+            </div>
+        </div>
+        
+        <div class="col-xs-4 cn-dg-5 mg-t-20">
+            <div class="lang-dv lang-dv-2 dem-5" onclick="rem_d2('dem-5')">
+                हिंदी भाषा
+            </div>
+        </div>
+        
+        <div class="col-xs-4 cn-dg-5 mg-t-20">
+            <div class="lang-dv lang-dv-1 dem-6" onclick="rem_d2('dem-6')">
+                Malawi
+            </div>
+        </div>  
+        
+        <div class="col-xs-4 cn-dg-5 mg-t-20">
+            <div class="lang-dv lang-dv-1 dem-7" onclick="rem_d2('dem-7')">
+                Malawi
+            </div>
+        </div>  
+        
+        <div class="col-xs-4 cn-dg-5 mg-t-20">
+            <div class="lang-dv lang-dv-2 dem-8" onclick="rem_d2('dem-8')">
+                Malawi
+            </div>
+        </div>  
+        
+        <div class="col-xs-4 cn-dg-5 mg-t-20">
+            <div class="lang-dv lang-dv-3 dem-9" onclick="rem_d2('dem-9')">
+                Malawi
+            </div>
+        </div>          
+    </div>
+    
+    <div class="foot-all col-xs-12 pd-b-10">
+        <div class="col-xs-12 mg-t-15 cn-dg-0">
+            <button data-role="none" class="btn all-button th-bt-1" onclick="op_new('login')">
+                تسجيل الدخول
+            </button>
+        </div>
+                
+        <div class="col-xs-12 mg-t-15 cn-dg-0">
+            <button data-role="none" class="btn all-button th-bt-1" onclick="op_new('signup')">
+                أننشاء حساب
+            </button>
+        </div>
+
+        <div class="col-xs-12 mg-t-15 cn-dg-0">
+            <button data-role="none" class="btn all-button th-bt-1" onclick="op_new('home')">
+                استمرار
+                <span class="ico-log">
+                    <img src="img/next-page.png"/>
+                </span>
+            </button>
+        </div>         
+    </div> 
+            
+</div>
+	
+    </div>
 </div>
 <!--page end -->
     
@@ -86,15 +143,18 @@
             </div>            
         </div>
     </div>
-    <div  class="page_background ar-text" align="center" id="content-home">
+    <div  class="page_background ar-text" align="center" id="content-here-py">
         <div class="mod-alert col-xs-12 cn-dg-0 vol-1">
             <div class="aler-mode col-xs-8 col-xs-push-2">
                 <div class="in-log" onclick="toggle_n('vol-1')">
                     <img src="img/error.png"/>
                 </div>
-                <div class="h5">هذا النص هو مثال لنص مؤقت</div>
-                <div class="btn" onclick="toggle_n('vol-1')">
-                    تاكيد 
+                <div class="h5">
+                    <span class="text-note"> عذرا ! </span>
+                    ليس لديك نقاط كافية سنئخذك لأقرب مكان لشحن حسابك
+                </div>
+                <div class="btn" onclick="op_new('here')">
+                    أستمر
                 </div>
             </div>
         </div>
@@ -103,15 +163,15 @@
                 <input data-role="none" type="search" class="form-control col-xs-12  div-a-1 input-form"/>
                 <div class="col-xs-12 cn-dg-0 mg-t-20">
                     <div class="div-line-c">
-                        <div class="ico-line color-main-1">الحرم</div>
+                        <div class="ico-line color-main-1 avs-1" onclick="rem_a2('avs-1')">الحرم</div>
                     </div>
                     
                     <div class="div-line-c">
-                        <div class="ico-line color-main-1">الجمرات</div>
+                        <div class="ico-line color-main-1 avs-2" onclick="rem_a2('avs-2')">الجمرات</div>
                     </div>
                     
                     <div class="div-line-c">
-                        <div class="ico-line color-main-1">عرفه</div>
+                        <div class="ico-line color-main-1 avs-3" onclick="rem_a2('avs-3')">عرفه</div>
                     </div>
                                     
                 </div>
@@ -119,53 +179,59 @@
             </div>
             
             <!--  Map            -->
-            <div id="map" class="map-main col-xs-12 cn-dg-0">
-                
+            <div id="googleMap" class="map-main col-xs-12 cn-dg-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.2071272127155!2d39.158651285057275!3d21.616851085682768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0a876494b67%3A0x8a988d5c842d2263!2z2YXYsdmD2LIg2KzYr9ipINmE2YTZhdmG2KrYr9mK2KfYqiDZiNin2YTZgdi52KfZhNmK2KfYqg!5e0!3m2!1sar!2ssa!4v1533251639730" frameborder="0" style="border:0" allowfullscreen></iframe>                
             </div>
             
             <div class="foot-all col-xs-12 cn-dg-0">
                 <div class="btn all-button color-main-1 mg-b-20" onclick="toggle_n('vol-1')">أستمرار</div>
             </div>
-        
+    </div>
 		<div data-role="panel" class="nav-panel color_2" data-position="right" data-position-fixed="true" data-display="push" id="nav-home">
             
-            <div class="aside-nav col-xs-12 text-right no-shadow">
-                <div class="link-nav col-xs-12">
-                    <img src="img/settings.png"/>
-                    الضبط
+            <div class="aside-nav col-xs-12 text-right no-shadow ar-text">
+                
+                <div class="profile-in col-xs-12 cn-dg-0">
+                    <img src="img/logo.png" />
                 </div>
-                <div class="link-nav col-xs-12">
-                    <img src="img/info.png"/>
-                    مساعدة
-                </div>
+                <div class="aside-items col-xs-12 cn-dg-0">
+
+                    <div class="link-nav col-xs-12">
+                        <img src="img/settings.png"/>
+                            الضبط
+                    </div>
+                    <div class="link-nav col-xs-12">
+                        <img src="img/info.png"/>
+                        مساعدة  
+                    </div>
             
-                <div class="link-nav col-xs-12">
-                    <img src="img/ring.png"/>
-                    أقرب جرس نداء
-                </div>
+                    <div class="link-nav col-xs-12">
+                        <img src="img/ring.png"/>
+                        أقرب جرس نداء
+                    </div>
                 
-                <div class="link-nav col-xs-12">
-                    <img src="img/bus-stop.png"/>
-                    أقرب مكان لشراء النقاط
-                </div>                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/bus-stop.png"/>
+                        أقرب مكان لشراء النقاط
+                    </div>                
                 
-                <div class="link-nav col-xs-12">
-                    <img src="img/guide.png"/>
-                    تعليمات المستخدم 
-                </div> 
+                    <div class="link-nav col-xs-12">
+                        <img src="img/guide.png"/>
+                        تعليمات المستخدم 
+                    </div> 
                 
-                <div class="link-nav col-xs-12">
-                    <img src="img/buy.png"/>
-                    شحن النقاط
-                </div> 
+                    <div class="link-nav col-xs-12">
+                        <img src="img/buy.png"/>
+                        شحن النقاط
+                    </div> 
                 
-                <div class="link-nav col-xs-12">
-                    <img src="img/call-center-service-for-information.png"/>
-                    اتصل بنا
+                    <div class="link-nav col-xs-12">
+                        <img src="img/call-center-service-for-information.png"/>
+                        اتصل بنا
+                    </div>                
                 </div>                 
             </div>
-		</div>
-	</div>
+		</div>  
 </div>
 <!--page end -->
     
@@ -173,10 +239,6 @@
 <div data-role="page" id="signup">
     <div data-role="header" class="color1 header_top" data-tap-toggle="false" data-position="fixed">
         <div class="col-xs-12 cn-pg-0">
-            <a class="ico-list mg-t-5 float-right" href="#nav-signup">
-                <img src="img/menu.png">
-            </a>
-            
             <div class="ico-list mg-t-5 float-left" onclick="bk_pg()">
                 <img src="img/back-arrow.png">
             </div>            
@@ -184,25 +246,56 @@
     </div>
     <div  class="page_background ar-text" align="center" id="content-signup">
             <div class="col-xs-12 cn-dg-0">
-                <img class="img-log" src="img/login.png" />
+                <img class="img-log log-cc" src="img/login.png" />
             </div>
             <div class="font-nano color-t-1 col-xs-12 mg-b-10 mg-t-10">أنشاء حساب</div>
             
             <form class="for-form col-xs-8 col-xs-push-2 cn-dg-0">
-                <input data-role="none" type="text" class="form-control input-form" placeholder="الاسم">
-                <input data-role="none" type="tel" class="form-control input-form" placeholder="رقم الهاتف">
-                <input data-role="none" type="email" class="form-control input-form" placeholder="البريد الالكتروني">
-                <input data-role="none" type="email" class="form-control input-form" placeholder="كلمة مرور">
-                <input data-role="none" type="email" class="form-control input-form" placeholder="تأكيد كلمة المرور">
-            </form>
-            <div class="foot-all col-xs-12 cn-dg-0">
+                <div class="col-xs-12 cn-dg-0">
+                    <input data-role="none" type="text" class="form-control div-a-1 input-form" placeholder="الاسم">
+                    <input data-role="none" type="tel" class="form-control div-a-1 input-form" placeholder="رقم الهاتف">
+                    <input data-role="none" type="email" class="form-control div-a-1 input-form" placeholder="البريد الالكتروني">
+                    <input data-role="none" type="email" class="form-control div-a-1 input-form" placeholder="كلمة مرور">
+                    <input data-role="none" type="email" class="form-control div-a-1 input-form" placeholder="تأكيد كلمة المرور">
+
+                </div>
+                
+                <div class="font-nano color-t-1 col-xs-12 mg-b-10  text-right">
+                طريقة الدفع
+                </div>
+                
+                <div class="col-xs-12 cn-dg-0 text-right">
+                    <label class="ch-redio">
+                        <span class="cs-ac-rd cl-1"></span>
+                        <input type="radio" name="line-1" onclick="rem_dh('cl-1')" data-role="none"/>
+                        كرت عضوية
+                    </label>
+                    
+                    <label class="ch-redio">
+                        <span class="cs-ac-rd cl-2"></span>
+                        <input type="radio" name="line-1" onclick="rem_dh('cl-2')" data-role="none"/>
+                        
+                        بطاقة أتمانية
+                    </label>
+                    
+                    <label class="ch-redio">
+                        <span class="cs-ac-rd cl-3"></span>
+                        
+                        <input type="radio" name="line-1" onclick="rem_dh('cl-3')" data-role="none"/>
+                        
+                        لدي نقاط
+                    </label>
+                </div>
+            <div class=" col-xs-12 cn-dg-0">
                 <div class="btn all-button color-main-1 mg-b-20">انشاء حساب</div>
             </div>
-        
+        </form>
+
+       
+    </div>
 		<div data-role="panel" class="nav-panel color_2" data-position="right" data-position-fixed="true" data-display="push" id="nav-signup">
         
-		</div>
-	</div>
+		</div>    
 </div>
 <!--page end -->    
     
@@ -210,7 +303,35 @@
 <div data-role="page" id="login">
     <div data-role="header" class="color1 header_top" data-tap-toggle="false" data-position="fixed">
         <div class="col-xs-12 cn-pg-0">
-            <a class="ico-list mg-t-5 float-right" href="#nav-login">
+            <div class="ico-list mg-t-5 float-left" onclick="bk_pg()">
+                <img src="img/back-arrow.png">
+            </div>            
+        </div>
+    </div>
+    <div  class="page_background ar-text" align="center" id="content-login">  
+          <div class="col-xs-12 cn-dg-0">
+                <img class="img-log log-cc" width="100" src="img/access.png" />
+            </div>
+            <div class="font-nano color-t-1 col-xs-12 mg-b-10 mg-t-10">تسجيل الدخول</div>
+            
+            <form class="for-form col-xs-8 col-xs-push-2 cn-dg-0">
+                <input data-role="none" type="email" class="form-control div-a-1 input-form" placeholder="البريد الالكتروني">
+                <input data-role="none" type="tel" class="form-control div-a-1 input-form" placeholder="كلمة المرور">
+            
+            </form>
+            <div class="foot-all col-xs-12 cn-dg-0">
+                <div class="btn all-button color-main-1 mg-b-20">تسجيل الدخول</div>
+            </div> 
+      
+    </div>   
+</div>
+<!--page end -->    
+    
+<!--page start-->
+<div data-role="page" id="here">
+    <div data-role="header" class="color1 header_top" data-tap-toggle="false" data-position="fixed">
+        <div class="col-xs-12 cn-pg-0">
+            <a class="ico-list mg-t-5 float-right" href="#nav-here">
                 <img src="img/menu.png">
             </a>
             
@@ -219,75 +340,263 @@
             </div>            
         </div>
     </div>
-    <div  class="page_background ar-text" align="center" id="content-login">
+    <div  class="page_background ar-text" align="center" id="content-home"> 
+       <div class="col-xs-12 cn-dg-10">
             <div class="col-xs-12 cn-dg-0">
-                <img class="img-log" src="img/access.png" />
+                <img class="img-log log-cc" src="img/route.png"/>
             </div>
-            <div class="font-nano color-t-1 col-xs-12 mg-b-10 mg-t-10">تسجيل الدخول</div>
+            <div class="col-xs-12 mg-t-10 color-t-1">أقرب الاماكن لك</div>
+            <div class="map-2 col-xs-12 cn-dg-0 mg-t-15">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.2071272127155!2d39.158651285057275!3d21.616851085682768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0a876494b67%3A0x8a988d5c842d2263!2z2YXYsdmD2LIg2KzYr9ipINmE2YTZhdmG2KrYr9mK2KfYqiDZiNin2YTZgdi52KfZhNmK2KfYqg!5e0!3m2!1sar!2ssa!4v1533251639730" frameborder="0" style="border:0" allowfullscreen></iframe>            
+           </div> 
+           <div class="foot-all  col-xs-12">
+                <button type="button" data-role="none" class="btn all-button color-main-1 mg-b-20 mg-t-10">الذهاب</button>
+           </div>
+        </div>
+    </div>
+    <div data-role="panel" class="nav-panel color_2" data-position="right" data-position-fixed="true" data-display="push" id="nav-here">
             
-            <form class="for-form col-xs-8 col-xs-push-2 cn-dg-0">
-                <input data-role="none" type="email" class="form-control input-form" placeholder="البريد الالكتروني">
-                <input data-role="none" type="tel" class="form-control input-form" placeholder="كلمة المرور">
+            <div class="aside-nav col-xs-12 text-right no-shadow ar-text">
+                
+                <div class="profile-in col-xs-12 cn-dg-0">
+                    <img src="img/logo.png" />
+                </div>
+                <div class="aside-items col-xs-12 cn-dg-0">
+
+                    <div class="link-nav col-xs-12">
+                        <img src="img/settings.png"/>
+                            الضبط
+                    </div>
+                    <div class="link-nav col-xs-12">
+                        <img src="img/info.png"/>
+                        مساعدة  
+                    </div>
             
-            </form>
-            <div class="foot-all col-xs-12 cn-dg-0">
-                <div class="btn all-button color-main-1 mg-b-20">تسجيل الدخول</div>
+                    <div class="link-nav col-xs-12">
+                        <img src="img/ring.png"/>
+                        أقرب جرس نداء
+                    </div>
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/bus-stop.png"/>
+                        أقرب مكان لشراء النقاط
+                    </div>                
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/guide.png"/>
+                        تعليمات المستخدم 
+                    </div> 
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/buy.png"/>
+                        شحن النقاط
+                    </div> 
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/call-center-service-for-information.png"/>
+                        اتصل بنا
+                    </div>                
+                </div>                 
             </div>
-        
-		<div data-role="panel" class="nav-panel color_2" data-position="right" data-position-fixed="login" data-display="push" id="nav-login">
-        
-		</div>
-	</div>
+		</div>  
 </div>
-<!--page end -->    
-    
+<!--page end -->
+ 
+<!--page start-->
+<div data-role="page" id="time-out">
+    <div data-role="header" class="color1 header_top" data-tap-toggle="false" data-position="fixed">
+        <div class="col-xs-12 cn-pg-0">
+            <a class="ico-list mg-t-5 float-right" href="#nav-time-out">
+                <img src="img/menu.png">
+            </a>
+            
+            <div class="ico-list mg-t-5 float-left" onclick="bk_pg()">
+                <img src="img/back-arrow.png">
+            </div>            
+        </div>
+    </div>
+    <div  class="page_background ar-text" align="center" id="content-time-out"> 
+       <div class="col-xs-12 cn-dg-10">
+            <div class="col-xs-12 cn-dg-0">
+                <img class="img-log log-cc" src="img/route.png"/>
+            </div>
+            <div class="col-xs-12 mg-t-10 color-t-1">أقرب الاماكن لك</div>
+            <div class="map-2 col-xs-12 cn-dg-0 mg-t-15"></div> 
+           <div class="foot-all  col-xs-12">
+                <button type="button" data-role="none" class="btn all-button color-main-1 mg-b-20 mg-t-10">الذهاب</button>
+           </div>
+        </div>
+    </div>
+    <div data-role="panel" class="nav-panel color_2" data-position="right" data-position-fixed="true" data-display="push" id="nav-time-out">
+            
+            <div class="aside-nav col-xs-12 text-right no-shadow ar-text">
+                
+                <div class="profile-in col-xs-12 cn-dg-0">
+                    <img src="img/logo.png" />
+                </div>
+                <div class="aside-items col-xs-12 cn-dg-0">
 
+                    <div class="link-nav col-xs-12">
+                        <img src="img/settings.png"/>
+                            الضبط
+                    </div>
+                    <div class="link-nav col-xs-12">
+                        <img src="img/info.png"/>
+                        مساعدة  
+                    </div>
+            
+                    <div class="link-nav col-xs-12">
+                        <img src="img/ring.png"/>
+                        أقرب جرس نداء
+                    </div>
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/bus-stop.png"/>
+                        أقرب مكان لشراء النقاط
+                    </div>                
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/guide.png"/>
+                        تعليمات المستخدم 
+                    </div> 
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/buy.png"/>
+                        شحن النقاط
+                    </div> 
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/call-center-service-for-information.png"/>
+                        اتصل بنا
+                    </div>                
+                </div>                 
+            </div>
+		</div>  
+</div>
+<!--page end -->
 
+<!--page start-->
+<div data-role="page" id="here-py">
+    <div data-role="header" class="color1 header_top" data-tap-toggle="false" data-position="fixed">
+        <div class="col-xs-12 cn-pg-0">
+            <a class="ico-list mg-t-5 float-right" href="#nav-here-py">
+                <img src="img/menu.png">
+            </a>
+            
+            <div class="ico-list mg-t-5 float-left" onclick="bk_pg()">
+                <img src="img/back-arrow.png">
+            </div>            
+        </div>
+    </div>
+    <div  class="page_background ar-text" align="center" id="content-here-py"> 
+       <div class="col-xs-12 cn-dg-10">
+            <div class="col-xs-12 cn-dg-0">
+                <img class="img-log log-cc" src="img/route.png"/>
+            </div>
+            <div class="h4 col-xs-12 mg-t-10 color-t-1">أقرب فرع لشراء النقاط</div>
+            <div class="map-2 col-xs-12 cn-dg-0 mg-t-15"></div> 
+          
+           <div class="col-xs-12">
+                <button type="button" data-role="none" class="btn all-button color-main-1 mg-b-20 mg-t-10">الذهاب</button>
+           </div>          
+           <div class="col-xs-12 cn-dg-0 mg-t-20">
+                <div class="col-xs-4 float-right">
+                    <div class="dv-element">
+                        عرض 1
+                    </div>
+               </div>
+               
+                <div class="col-xs-4 float-right">
+                    <div class="dv-element">
+                        عرض 2
+                    </div>
+               </div>
+               
+                <div class="col-xs-4 float-right">
+                    <div class="dv-element">
+                        عرض 3
+                    </div>
+               </div>
+               
+           </div>
+           <div class="col-xs-12 cn-dg-0 mg-t-20">
+                <div class="col-xs-4 float-right">
+                    <div class="dv-element">
+                        عرض 1
+                    </div>
+               </div>
+               
+                <div class="col-xs-4 float-right">
+                    <div class="dv-element">
+                        عرض 2
+                    </div>
+               </div>
+               
+                <div class="col-xs-4 float-right">
+                    <div class="dv-element">
+                        عرض 3
+                    </div>
+               </div>
+               
+           </div>
+            
+        </div>
+    </div>
+    <div data-role="panel" class="nav-panel color_2" data-position="right" data-position-fixed="true" data-display="push" id="nav-here-py">
+            
+            <div class="aside-nav col-xs-12 text-right no-shadow ar-text">
+                
+                <div class="profile-in col-xs-12 cn-dg-0">
+                    <img src="img/logo.png" />
+                </div>
+                <div class="aside-items col-xs-12 cn-dg-0">
+
+                    <div class="link-nav col-xs-12">
+                        <img src="img/settings.png"/>
+                            الضبط
+                    </div>
+                    <div class="link-nav col-xs-12">
+                        <img src="img/info.png"/>
+                        مساعدة  
+                    </div>
+            
+                    <div class="link-nav col-xs-12">
+                        <img src="img/ring.png"/>
+                        أقرب جرس نداء
+                    </div>
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/bus-stop.png"/>
+                        أقرب مكان لشراء النقاط
+                    </div>                
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/guide.png"/>
+                        تعليمات المستخدم 
+                    </div> 
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/buy.png"/>
+                        شحن النقاط
+                    </div> 
+                
+                    <div class="link-nav col-xs-12">
+                        <img src="img/call-center-service-for-information.png"/>
+                        اتصل بنا
+                    </div>                
+                </div>                 
+            </div>
+		</div>  
+</div>
+<!--page end -->
+ 
     
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
 <script>
-    var h = window.innerHeight-60;
-    $(".page_background").height(h);
-    var map, infoWindow;
-    function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 6
-        });
-        infoWindow = new google.maps.InfoWindow;
-
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var pos = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                };
-
-                infoWindow.setPosition(pos);
-                infoWindow.setContent('Location found.');
-                infoWindow.open(map);
-                map.setCenter(pos);
-            }, function() {
-                handleLocationError(true, infoWindow, map.getCenter());
-            });
-        } else {
-            // Browser doesn't support Geolocation
-            handleLocationError(false, infoWindow, map.getCenter());
-        }
-    }
-
-    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                'Error: The Geolocation service failed.' :
-                'Error: Your browser doesn\'t support geolocation.');
-        infoWindow.open(map);
-    }
- </script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>    
+       var h = window.innerHeight;
+    $(".page_background").height(h);        
+</script>
+  
  </body>
 </html>

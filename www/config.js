@@ -1,4 +1,4 @@
-var  configurl="http://192.168.1.22/courior/api_user/";
+var  configurl="http://10.0.44.33/hack-pro/api/";
 //var configurl="#";
 var lang;
 var user_id=localStorage.getItem('user_id');
@@ -13,32 +13,6 @@ function logout() {
     window.location="account.html";
 
 }
-
-if (localStorage.getItem('lang')==null){
-      lang="AR";
-
-}else{
-      lang=localStorage.getItem('lang');
-
-}
-
-function makeid() {
-    var text = "";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-    for (var i = 0; i < 7; i++)
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-    return text;
-}
-var order_id=localStorage.getItem('order_id');
-
-if (order_id==null){
-    localStorage.setItem('order_id',makeid());
-
-}
-
-
-
 
  function back_btn() {
     window.history.back();
