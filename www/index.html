@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> hajjcar  </title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        @-ms-viewport {
+            width: 100vw ;
+            zoom: 100% ;
+        }
+        @viewport {
+            width: 100vw ;
+            zoom: 100% ;
+        }
+        @-ms-viewport {
+            user-zoom: fixed ;
+        }
+        @viewport {
+            user-zoom: fixed ;
+        }
+    </style>
+<!--    <script src="cordova.js"></script>-->
+    <script src="js/app.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="jm/jquery.mobile-1.4.5.min.js"></script>
+    <script src="config.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="jm/jquery.mobile-1.4.5.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Fugaz+One|Shrikhand" rel="stylesheet"/>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="rtl.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" id="rtl" >
+</head>
+<body class="color1">
+
+<!--page start-->
+<div data-role="page" id="start">
+    <div  class="page_background" align="center" id="content-start">
+        <div class="start-page-1 col-xs-12 cn-dg-0">
+            <div class="img-log">
+                <img src="img/logo.png"/>
+            </div>
+            
+            <div class="foot-all col-xs-12" style="margin-bottom: 100px">
+                <div class="col-xs-12 mg-t-15 cn-dg-0">
+                    <button data-role="none" class="btn all-button th-bt-1" onclick="op_new('login')">
+                        تسجيل الدخول
+                    </button>
+                </div>
+            
+                <div class="col-xs-12 mg-t-15 cn-dg-0">
+                    <button data-role="none" class="btn all-button th-bt-1" onclick="op_new('signup')">
+                        أننشاء حساب
+                    </button>
+                </div>
+
+                <div class="col-xs-12 mg-t-15 cn-dg-0">
+                    <button data-role="none" class="btn all-button th-bt-1" onclick="op_new('home')">
+                        استمرار
+                        <span class="ico-log">
+                            <img src="img/next-page.png"/>
+                        </span>
+                    </button>
+                </div>         
+            </div> 
+            
+        </div>
+	</div>
+</div>
+<!--page end -->
+    
+<!--page start-->
+<div data-role="page" id="home">
+    <div data-role="header" class="color1 header_top" data-tap-toggle="false" data-position="fixed">
+        <div class="col-xs-12 cn-pg-0">
+            <a class="ico-list mg-t-5 float-right" href="#nav-home">
+                <img src="img/menu.png">
+            </a>
+            
+            <div class="ico-list mg-t-5 float-left" onclick="bk_pg()">
+                <img src="img/back-arrow.png">
+            </div>            
+        </div>
+    </div>
+    <div  class="page_background ar-text" align="center" id="content-home">
+        <div class="mod-alert col-xs-12 cn-dg-0 vol-1">
+            <div class="aler-mode col-xs-8 col-xs-push-2">
+                <div class="in-log" onclick="toggle_n('vol-1')">
+                    <img src="img/error.png"/>
+                </div>
+                <div class="h5">هذا النص هو مثال لنص مؤقت</div>
+                <div class="btn" onclick="toggle_n('vol-1')">
+                    تاكيد 
+                </div>
+            </div>
+        </div>
+            <div class="col-xs-10 col-xs-push-1 cn-dg-0 z-all text-center"> 
+                <div class="font-nano color-t-1 col-xs-12 mg-b-10">الي اين ستذهب ؟</div>
+                <input data-role="none" type="search" class="form-control col-xs-12  div-a-1 input-form"/>
+                <div class="col-xs-12 cn-dg-0 mg-t-20">
+                    <div class="div-line-c">
+                        <div class="ico-line color-main-1">الحرم</div>
+                    </div>
+                    
+                    <div class="div-line-c">
+                        <div class="ico-line color-main-1">الجمرات</div>
+                    </div>
+                    
+                    <div class="div-line-c">
+                        <div class="ico-line color-main-1">عرفه</div>
+                    </div>
+                                    
+                </div>
+                
+            </div>
+            
+            <!--  Map            -->
+            <div id="map" class="map-main col-xs-12 cn-dg-0">
+                
+            </div>
+            
+            <div class="foot-all col-xs-12 cn-dg-0">
+                <div class="btn all-button color-main-1 mg-b-20" onclick="toggle_n('vol-1')">أستمرار</div>
+            </div>
+        
+		<div data-role="panel" class="nav-panel color_2" data-position="right" data-position-fixed="true" data-display="push" id="nav-home">
+            
+            <div class="aside-nav col-xs-12 text-right no-shadow">
+                <div class="link-nav col-xs-12">
+                    <img src="img/settings.png"/>
+                    الضبط
+                </div>
+                <div class="link-nav col-xs-12">
+                    <img src="img/info.png"/>
+                    مساعدة
+                </div>
+            
+                <div class="link-nav col-xs-12">
+                    <img src="img/ring.png"/>
+                    أقرب جرس نداء
+                </div>
+                
+                <div class="link-nav col-xs-12">
+                    <img src="img/bus-stop.png"/>
+                    أقرب مكان لشراء النقاط
+                </div>                
+                
+                <div class="link-nav col-xs-12">
+                    <img src="img/guide.png"/>
+                    تعليمات المستخدم 
+                </div> 
+                
+                <div class="link-nav col-xs-12">
+                    <img src="img/buy.png"/>
+                    شحن النقاط
+                </div> 
+                
+                <div class="link-nav col-xs-12">
+                    <img src="img/call-center-service-for-information.png"/>
+                    اتصل بنا
+                </div>                 
+            </div>
+		</div>
+	</div>
+</div>
+<!--page end -->
+    
+<!--page start-->
+<div data-role="page" id="signup">
+    <div data-role="header" class="color1 header_top" data-tap-toggle="false" data-position="fixed">
+        <div class="col-xs-12 cn-pg-0">
+            <a class="ico-list mg-t-5 float-right" href="#nav-signup">
+                <img src="img/menu.png">
+            </a>
+            
+            <div class="ico-list mg-t-5 float-left" onclick="bk_pg()">
+                <img src="img/back-arrow.png">
+            </div>            
+        </div>
+    </div>
+    <div  class="page_background ar-text" align="center" id="content-signup">
+            <div class="col-xs-12 cn-dg-0">
+                <img class="img-log" src="img/login.png" />
+            </div>
+            <div class="font-nano color-t-1 col-xs-12 mg-b-10 mg-t-10">أنشاء حساب</div>
+            
+            <form class="for-form col-xs-8 col-xs-push-2 cn-dg-0">
+                <input data-role="none" type="text" class="form-control input-form" placeholder="الاسم">
+                <input data-role="none" type="tel" class="form-control input-form" placeholder="رقم الهاتف">
+                <input data-role="none" type="email" class="form-control input-form" placeholder="البريد الالكتروني">
+                <input data-role="none" type="email" class="form-control input-form" placeholder="كلمة مرور">
+                <input data-role="none" type="email" class="form-control input-form" placeholder="تأكيد كلمة المرور">
+            </form>
+            <div class="foot-all col-xs-12 cn-dg-0">
+                <div class="btn all-button color-main-1 mg-b-20">انشاء حساب</div>
+            </div>
+        
+		<div data-role="panel" class="nav-panel color_2" data-position="right" data-position-fixed="true" data-display="push" id="nav-signup">
+        
+		</div>
+	</div>
+</div>
+<!--page end -->    
+    
+<!--page start-->
+<div data-role="page" id="login">
+    <div data-role="header" class="color1 header_top" data-tap-toggle="false" data-position="fixed">
+        <div class="col-xs-12 cn-pg-0">
+            <a class="ico-list mg-t-5 float-right" href="#nav-login">
+                <img src="img/menu.png">
+            </a>
+            
+            <div class="ico-list mg-t-5 float-left" onclick="bk_pg()">
+                <img src="img/back-arrow.png">
+            </div>            
+        </div>
+    </div>
+    <div  class="page_background ar-text" align="center" id="content-login">
+            <div class="col-xs-12 cn-dg-0">
+                <img class="img-log" src="img/access.png" />
+            </div>
+            <div class="font-nano color-t-1 col-xs-12 mg-b-10 mg-t-10">تسجيل الدخول</div>
+            
+            <form class="for-form col-xs-8 col-xs-push-2 cn-dg-0">
+                <input data-role="none" type="email" class="form-control input-form" placeholder="البريد الالكتروني">
+                <input data-role="none" type="tel" class="form-control input-form" placeholder="كلمة المرور">
+            
+            </form>
+            <div class="foot-all col-xs-12 cn-dg-0">
+                <div class="btn all-button color-main-1 mg-b-20">تسجيل الدخول</div>
+            </div>
+        
+		<div data-role="panel" class="nav-panel color_2" data-position="right" data-position-fixed="login" data-display="push" id="nav-login">
+        
+		</div>
+	</div>
+</div>
+<!--page end -->    
+    
+
+
+    
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+<script>
+    var h = window.innerHeight-60;
+    $(".page_background").height(h);
+    var map, infoWindow;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Location found.');
+                infoWindow.open(map);
+                map.setCenter(pos);
+            }, function() {
+                handleLocationError(true, infoWindow, map.getCenter());
+            });
+        } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, infoWindow, map.getCenter());
+        }
+    }
+
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+    }
+ </script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>    
+ </body>
+</html>
