@@ -26,20 +26,17 @@ function rem_d2(d_2){
     $("."+d_2).addClass("act-lang");
 }
 
-function rem_a2(a_2){
-    $(".lang-dv").removeClass("act-lang-d");
-    $("."+a_2).addClass("act-lang-d");
-}
 
 function copyDiv() {
     var 
         firstDivContent = document.getElementById('nav-home'),
         Content_1 = document.getElementById('nav-here'),
         Content_2 = document.getElementById('nav-time-out'),
-        Content_3 = document.getElementById('nav-here-py');
-
+        Content_3 = document.getElementById('nav-here-py'),
+        Content_4 = document.getElementById('nav-edit-a');
         Content_1.innerHTML = firstDivContent.innerHTML;
         Content_2.innerHTML = firstDivContent.innerHTML;
         Content_3.innerHTML = firstDivContent.innerHTML;
+        Content_4.innerHTML = firstDivContent.innerHTML;
 }
 copyDiv();

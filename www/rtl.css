@@ -92,7 +92,9 @@ font-family: 'Cairo', sans-serif !important;
     margin-left: 0px !important;
 }
 
-
+.header_top{
+    border-bottom: 3px solid #2f5da8 !important;
+}
 .ui-page-theme-a .ui-bar-inherit {
     box-shadow: none !important;
     text-shadow: none !important;
@@ -346,7 +348,7 @@ text-align: right;
     right: 0;
 }
 .all-button,.btn.focus, .btn:focus, .btn:hover{
-    min-width: 140px;
+    min-width: 180px;
     padding: 5px 10px;
     height: 35px;
     border-radius: 5px;
@@ -373,12 +375,14 @@ text-align: right;
 }
 
 .ico-list{
+    position: relative;
     display: block;
     width: 38px;
     height: 38px;
     padding: 5px;
     background: #2f5da8;
     border-radius: 50%;
+    z-index: 20;
 }
 
 .ico-list img{
@@ -532,7 +536,7 @@ text-align: right;
     font-size: 15px;
 }
 
-input.div-a-1{
+input.div-a-1, select.div-a-1{
     border: 1px solid #2f5da8;
     height: 40px;
 }
@@ -588,15 +592,37 @@ input.div-a-1{
 .act-lang-d{
     background: #fff;
     border: 1px solid #2f5da8;
+    color: #2f5da8;
 }
 .act-lang{
     background: #fff;
     border: 2px solid #2f5da8;
     color: #2f5da8;
 }
-
+.heading-tex{
+    height: 100%;
+    width: 100%;
+    position: absolute;    
+    right: 0;
+    top: 0;  
+    color: #2f5da8;
+    text-align: center;
+    padding-top: 15px;
+    z-index: 0;
+}
 .map-main iframe, .map-2 iframe{
     display: block;
     height: 100%;
     width: 100%;
+}
+
+.map-main:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;;
+    z-index: 5;
 }
